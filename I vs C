@@ -1,0 +1,18 @@
+class Employee:
+  companyname = "Google"
+  NoofEmployees = 0
+  def __init__(self,name):
+    self.name = name
+    self.raise_amount = 0.02
+    Employee.NoofEmployees  +=1
+
+  def showdetails(self):
+    print(f"The name of the Employee is {self.name} and the raise amount in {self.NoofEmployees} sized {self.companyname} is {self.raise_amount}")
+
+#Employee.showdetails(emp1)
+emp1 = Employee("Maaz")
+emp1.raise_amount = 0.3
+emp1.companyname = "Google India"
+emp1.showdetails()
+emp2 = Employee("Rohan")
+emp2.showdetails()
